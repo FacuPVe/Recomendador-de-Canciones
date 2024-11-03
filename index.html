@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendador de Canciones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-clipart/20221028/original/pngtree-music-logo-png-image_8736577.png">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="recomendador.php" method="post" id="moodForm">
+            <h1 id="titleForm">Selecciona tu Estado de Ánimo</h1>
+            <select name="mood" id="mood" required>
+                <option value="">--Elige el Estado de Ánimo--</option>
+                <option value="feliz">Feliz</option>
+                <option value="triste">Triste</option>
+                <option value="energetico">Energético</option>
+                <option value="relajado">Relajado</option>
+                <option value="inspirado">Inspirado</option>
+                <option value="estresado">Estresado</option>
+            </select>
+            <strong><label>¡Dale clic al botón para obtener recomendaciones de canciones!</label></strong>
+            <input type="submit" value="Obtener Recomendación" id="submitBtn">
+        </form>
+        <img src="https://img.freepik.com/premium-vector/happy-sad-face-emotion-vector-illustration_869472-942.jpg" alt="Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
